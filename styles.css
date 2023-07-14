@@ -92,21 +92,38 @@ section {
   margin-bottom: 30px;
 }
 
+#project-1, #project-2 {
+  display: flex;
+}
+
 h2 {
   color: #6283b4;
 }
 
 .project h3 {
+  text-align: center;
   color: #ff9900;
   margin: 15px 0;
 }
 
 .project img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
 .project img.enlarge {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+.project-screenshot {
+  flex: 1;
+}
+
+.project-desc {
+  flex: 2;
+}
+
+.project-desc p {
+  font-size: 16px;
 }
