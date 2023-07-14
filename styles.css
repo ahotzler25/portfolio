@@ -14,14 +14,16 @@ body {
 }
 
 .name {
+  font-family: 'Dancing Script', cursive;
   color: #ff9900;
-  font-size: 40px;
+  font-size: 60px;
   margin: 0;
 }
 
 .title {
+  font-family: 'Dancing Script', cursive;
   color: #ff9900;
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
 }
 
@@ -55,7 +57,7 @@ nav ul li a.hover {
 main {
   flex-grow: 1;
   display: flex;
-  /* align-items: stretch; */
+  font-family: 'Playfair Display', serif;
 }
 
 section {
