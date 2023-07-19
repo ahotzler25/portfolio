@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -46,12 +46,16 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:active {
   text-decoration: underline;
 }
 
 nav ul li a.hover {
-  color: #6283b4;
+  color: #ff9900;
+}
+
+a:visited {
+  color: #ff9900;
 }
 
 main {
@@ -96,7 +100,7 @@ section {
 }
 
 h2 {
-  color: #6283b4;
+  color: #ff9900;
 }
 
 /* .project h3 */
