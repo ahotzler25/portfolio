@@ -54,7 +54,11 @@ nav ul li a.hover {
   color: #ff9900;
 }
 
-a:visited {
+nav a {
+  color: #ff9900
+}
+
+nav a:visited {
   color: #ff9900;
 }
 
@@ -67,13 +71,13 @@ main {
 
 section {
   display: flex;
-  align-items: stretch;
+  /* align-items: stretch; */
 }
 
 .left-section,
 .right-section {
-  display: flex; 
-  flex-direction: column;
+  /* display: flex;  */
+  /* flex-direction: column; */
   width: 15%;
   background-color: #000000;
 }
@@ -82,37 +86,37 @@ section {
   display: flex;
   flex-direction: column;
   width: 70%;
-  color: #e0e0e0;
-  background-color: #535353;
+  color: #000000;
+  background-color: #DDDDDE;
   padding: 10px 50px 10px 50px;
+}
+
+.middle-section h2 {
+  font-size: 40px;
+  text-align: center;
 }
 
 .middle-section p {
   font-size: 20px;
 }
 
+body a {
+  color: blue;
+}
+
 .project {
   margin-bottom: 30px;
+  /* background: linear-gradient(to left, #DDDDDE, 95%, black); */
 }
 
-#project-1, #project-2 {
+#project-1, #project-2, #project-3, #project-4 {
   display: flex;
-}
-
-h2 {
-  color: #ff9900;
-}
-
-/* .project h3 */
-h3 {
-  /* text-align: center; */
-  color: #ff9900;
-  margin:  0;
 }
 
 .project img {
   max-width: 90%;
   height: auto;
+  max-height: 90%;
 }
 
 .project img.enlarge {
@@ -126,8 +130,19 @@ h3 {
 
 .project-desc {
   flex: 2;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.project-desc ul {
+  margin: 2px;
+  
 }
 
 .project-desc p {
   font-size: 16px;
+}
+
+h3 {
+  margin-top: 0;
 }
