@@ -170,6 +170,10 @@ h3 {
   margin-top: 0;
 }
 
+.writing-samples p {
+  font-size: 15px;
+}
+
 /* Style the Image Used to Trigger the Modal */
 #myImg {
   border-radius: 5px;
