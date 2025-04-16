@@ -2,49 +2,34 @@
 <html>
   <head>
     <title>Andy Hotzler - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Titillium+Web:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
+  
 <body>
-  <header>
-    <section class="header">
-      <div class="left-section">
-        <!-- This is left-section -->
+  <header class="site-header">
+    <div class="header-container">
+      <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic" />
+      <div class="profile-info">
+        <h1 class="name">Andy Hotzler</h1>
+        <p class="job-title">Game Writer & Narrative Designer</p>
       </div>
-      <div id="header-screenshot">
-        <img src="images/profile-pic.jpg">
-      </div>
-      <div id="header-container">
-        
-      <br><br><br>
-        <div id="header-name">
-          <h1 class="name">Andy Hotzler</h1>
-        </div>
-        <div id="header-title">
-          <h2 class="title">Game Writer & Narrative Designer</h2>
-        </div>
-        <br><br><br>
-
-        <div id="links">
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="writingsamples.html">Writing Samples</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="https://www.linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a></li>
-              <!-- <li><a href="contact.html">Contact</a></li> -->
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="right-section">
-        <!-- This is right-section -->
-      </div>
-    </section>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+    
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Game Credits</a>
+      <a href="writingsamples.html">Writing Samples</a>
+      <a href="resume.html">Resume</a>
+      <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;"> LinkedIn</i></a>
+    </nav>
   </header>
 
   <main>
@@ -62,23 +47,33 @@
         <p>I hold a Master of Arts, English with an emphasis in Creative Writing. My thesis was a branching narrative, scripted and written in Twine 2.x using Sugarcube 2
           titled "Lost in the Shadows Between Worlds" (<a href="https://ahotzler.itch.io/lost-in-the-shadows-between-worlds" target="_blank">Link to project on itch.io</a>).</p>
           
-        <p>I also participated in a GameDev.Tv's 2023 game jam using the theme "two dimensions". "The Adventure of Ignatius" (<a href="https://ahotzler.itch.io/adventure-of-ignatius" target="_blank">Link to itch.io</a>) 
-          is a quirky 3D puzzle/platformer I co-created in Unreal Engine 5 using Blueprints. My teammate was primarily responsible for the visual scripting and menu design, while my
-          primary responsibilities were level design, puzzle design, audio implementation, and UX. </p>
-
-          <p>I also programming and scripting experience, be it Twine (primarily SugarCube 2), Python, web development and tools (HTML5, CSS3, JavaScript, React), or C++ (certificate from GameDev.TV: "C++ Fundamentals: Game Programming for Beginners").</p>
+        <p>I participated in GameDev.TV's 2023 ten-day game jam using the theme "two dimensions". "The Adventure of Ignatius" (<a href="https://ahotzler.itch.io/adventure-of-ignatius" target="_blank">Link to itch.io</a>) 
+          is a quirky 3D puzzle/platformer created in Unreal Engine 5 using Blueprints. My primary responsibilities were level design, puzzle design, audio implementation, and UX. </p>
             
-          <p>I have over two years professional quality assurance experience, one year as a QA Tester II/III on an unreleased AAA game, and just over one year as a QA Analyst I 
+          <p>I have over two years professional quality assurance experience, one year as a QA Tester on an unreleased AAA game, and just over one year as a QA Analyst I 
             assisting in launching seasons 6 and 7 in Halo: Infinite and released Ara: History Untold. I'm familiar with the entire SDLC,
             and thanks to my background in both QA and programming, I'm comfortable collaborating and brainstorming with all game dev teams.</p>  
-
-          <p>Please feel free to contact me via e-mail: ahotzler -at- gmail.com, or via <a href="https://linkedin.com/in/andyhotzler" target="_blank">LinkedIn</a>.</p>
       </div>
       <div class="right-section">
         <!-- Right section content goes here -->
       </div>
     </section>
-    <script src="script.js"></script>
+    <script src="script.js">
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });</script>
   </main>
+  
+  <!-- <footer class="footer">
+    <div class="middle-section">
+      <h3>You can contact me by e-mail at ahotzler@gmail.com or connect
+        with me on LinkedIn <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;">.</i></a></h3>
+      <br>
+      <h3>© Andy Hotzler 2025, All rights reserved</h3>
+    </div>
+  </footer> -->
 </body>
 </html>
