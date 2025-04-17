@@ -303,7 +303,7 @@ footer h5 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   /* HAMBURGER MENU SETUP */
   .nav-container {
     display: flex;
@@ -333,7 +333,7 @@ footer h5 {
 
 
 /* RESPONSIVE STYLES */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   body {
     text-align: center;
   }
@@ -396,7 +396,7 @@ footer h5 {
 
   .middle-section {
     width: 100%;
-    background-color: white;
+    background-color: DDDDE0;
     padding: 0 10px;
     text-align: left;
   }
