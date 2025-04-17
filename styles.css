@@ -1,15 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.site-header {
-  padding: 20px;
+body a {
+  color: rgb(58, 58, 180);
+}
+
+.site-header, footer {
+  padding: 20px 0;
   background-color: black;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .header-container {
@@ -47,20 +55,11 @@ body {
   margin: 0;
 }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8em;
-  cursor: pointer;
-}
-
 .nav-links {
   margin-top: 30px;
   display: flex;
   gap: 75px;
   justify-content: center;
-  font-size: 1.25em;
 }
 
 .nav-links a:hover,
@@ -71,14 +70,17 @@ body {
 
 .nav-links a, .nav-links a:visited {
   color: #ff9900;
+  font-size: 25px;
   text-decoration: none;
   font-weight: 500;
 }
 
 section {
   display: flex;
-  background-color: #DDDDE0;
-  /* align-items: stretch; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Black base */
 }
 
 main {
@@ -97,7 +99,8 @@ main {
 .middle-section {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+  background-color: #DDDDE0;
   color: #000000;
   padding: 0;
   margin: 0;
@@ -125,20 +128,21 @@ section #home, section #resume, span .game-credits, span .writing-samples {
   height: 100%;
 }
 
-body a {
-  color: rgb(58, 58, 180);
-}
-
 .section-headers {
   display: flex;
-  padding-top: 10px;
+  padding-top: 20px;
   justify-content: space-evenly;
   background-color: #DDDDE0;
 }
 
+.section-headers a {
+  color: #594ebd;
+}
+
 #home {
-  width: 70%;
-  margin: 20px 200px 20px 200px;
+  
+  margin: 0;
+  padding: 40px;
 }
 
 #project-1, #project-2, #project-3, #project-4, #project-5, #project-6, #project-7 {
@@ -192,9 +196,8 @@ h3 {
 }
 
 #hunt-lore {
-  padding-left: 50px;
+  padding-left: 100px;
   width: 70%;
-  justify-content: center;
 }
 
 .published-projects{
@@ -204,13 +207,13 @@ h3 {
 }
 
 footer {
-  display: flex;
   background-color: black;
+  width: 100%;
   text-align: center;
   padding-top: 20px;
 }
 
-footer h4 {
+footer h5 {
   color: #ff9900;
 }
 
@@ -300,29 +303,157 @@ footer h4 {
   }
 }
 
-
-/* Responsive Styles */
 @media (max-width: 800px) {
-  .header-container {
-    flex-direction: row;
-    align-items: flex-start;
+  /* HAMBURGER MENU SETUP */
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
   }
 
-  .profile-info {
-    margin-left: 10px;
+  .menu-icon {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    color: #ff9900;
+    cursor: pointer;
   }
 
-  .menu-toggle {
+  /* DEFAULT DESKTOP NAV */
+  .nav-links {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .menu-icon {
     display: block;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 20px 0;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    z-index: 99;
   }
 
   .nav-links.show {
     display: flex;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: auto;
+  }
+
+  .name {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .job-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #home {
+    width: 100%;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    display: none;
+  }
+
+  .middle-section {
+    width: 100%;
+    background-color: white;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .middle-section h2 {
+    font-size: 25px;
+  }
+
+  .middle-section h3 {
+    font-size: 20px;
+  }
+
+  .middle-section p, .middle-section li {
+    font-size: 14px;
+  }
+
+  .project-desc p {
+    padding: 0 2px 0 2px;
+  }
+
+  .section-headers {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0;
+    justify-content: space-evenly;
+    background-color: #DDDDE0;
+  }
+
+  #hunt-lore {
+    padding: 0 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  #resume {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #resume-page1, #resume-page2, #gamedev-cert, #thinkful-cert {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/* EVEN SMALLER SCREENS */
+@media (max-width: 480px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+  }
+
+  .nav-links a {
+    font-size: 18px;
   }
 }

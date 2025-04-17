@@ -18,16 +18,18 @@
         <h1 class="name">Andy Hotzler</h1>
         <p class="job-title">Game Writer & Narrative Designer</p>
       </div>
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        ☰
-      </button>
     </div>
     
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;"> LinkedIn</i></a>
+    <nav class="nav-container">
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://www.linkedin.com/in/andyhotzler" target="_blank">
+          <i class="fa fa-linkedin-square" style="font-size:25px;"> LinkedIn</i>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -57,22 +59,18 @@
         <!-- Right section content goes here -->
       </div>
     </section>
+
     <script src="script.js">
-      const toggleButton = document.querySelector('.menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-      
-      toggleButton.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });</script>
+
+    </script>
+
   </main>
   
   <footer class="footer">
-    <div class="middle-section">
-      <h4>You can contact me by e-mail at ahotzler@gmail.com or connect
-        with me on LinkedIn <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;">.</i></a></h4>
-      
-      <h4>© Andy Hotzler 2025, All rights reserved</h4>
-    </div>
+    <h5>You can contact me by e-mail at ahotzler@gmail.com or connect
+      with me on LinkedIn <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;">.</i></a></h5>
+    
+    <h5>© Andy Hotzler 2025, All rights reserved</h5>
   </footer>
 </body>
 </html>

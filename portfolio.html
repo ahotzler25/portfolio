@@ -20,11 +20,16 @@
       </div>
     </div>
     
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="resume.html">Resume</a>
-      <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;"> LinkedIn</i></a>
+    <nav class="nav-container">
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="https://www.linkedin.com/in/andyhotzler" target="_blank">
+          <i class="fa fa-linkedin-square" style="font-size:25px;"> LinkedIn</i>
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -41,7 +46,7 @@
           <h3><a href="#Published Projects">Published Projects</a></h3>
           <h3><a href="#writing-samples">Writing Samples</a></h3>
         </div>
-        <br><br>
+        <br>
         <span class="game-credits">
           <h2 id="Game Credits">Game Credits</h2>
           
@@ -194,15 +199,14 @@
           </div>
 
           <div>      
-            <br><br><br><br><br>
+            <br><br><br><br>
             <h3><i>Hunt: Showdown</i> - Found Lore</h3>
-            <div class="project-desc"></div>
-              <p>Below is a sample of found lore in the form of a diary entry, written by an unknown monster hunter 
-                at an unknown time. It chronicles the few details the hunter learned of a monster that haunted the Bayou 
-                simply known as "the Priestess." Many hunter diaries exist with efforts made to collate them into a 
-                single tome called <i>The Bayou Bestiary</i>.
-              </p>    
-              
+            <p>Below is a sample of found lore in the form of a diary entry, written by an unknown monster hunter 
+              at an unknown time. It chronicles the few details the hunter learned of a monster that haunted the Bayou 
+              simply known as "the Priestess." Many hunter diaries exist with efforts made to collate them into a 
+              single tome called <i>The Bayou Bestiary</i>.
+            </p>    
+            <div class="project-desc">
               <div id="hunt-lore">
                 <p>[The date and name is faded and illegible]
                 <br><br>
@@ -217,9 +221,11 @@
                   summoning voodoo dolls to life to explode, shooting shrapnel in all directions. No armor has yet been discovered to stop these from piercing 
                   one’s body, almost guided by something supernatural one can never accurately articulate.</p>
               </div>
-                  <br><br>
+
+              <br><br>
             </div>
           </div>
+        </div>
           <!-- <div id="project-7">
             <h4>Short Screenplay</h4>
             <div class="project-desc">
@@ -238,12 +244,10 @@
   </main>
 
   <footer class="footer">
-    <div class="middle-section">
-      <h4>You can contact me by e-mail at ahotzler@gmail.com or connect
-        with me on LinkedIn <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;">.</i></a></h4>
-      
-      <h4>© Andy Hotzler 2025, All rights reserved</h4>
-    </div>
+    <h5>You can contact me by e-mail at ahotzler@gmail.com or connect
+      with me on LinkedIn <a href="https://www.linkedin.com/in/andyhotzler" target="_blank"><i class="fa fa-linkedin-square" style="font-size:20px;">.</i></a></h5>
+    
+    <h5>© Andy Hotzler 2025, All rights reserved</h5>
   </footer>
 </body>
 </html>
